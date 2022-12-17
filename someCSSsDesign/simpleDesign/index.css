@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', serif;
+    box-sizing: border-box;
+}
+.cntnr {
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(bg.jpg);
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    align-items: center;
+}
+.navlogo img {
+    width: 160px;
+}
+.navlinks {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+.navlinks a {
+    text-decoration: none;
+    color: white;
+    margin-left: 40px;
+}
+.navlinks .btn {
+    color: black;
+    background: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+.content {
+    margin-top: 160px;
+    color: white;
+}
+.content h1 {
+    font-size: 60px;
+}
+.searchbox {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+.searchbox input {
+    background: transparent;
+    width: 600px;
+    border: 0;
+    outline: none;
+}
+.searchbox button {
+    border: 0;
+    cursor: pointer;
+    background: transparent;
+}
+.searchbox button img {
+    width: 22px;
+}
+.arrow {
+    margin-top: 90px;
+}
+.arrow img {
+    width: 15px;
+    padding: 20px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 5px;
+    box-sizing: content-box;
+    margin-right: 6px;
+    cursor: pointer;
+}
+@media (max-width: 700px) {
+    .searchbox input {
+     width: 230px;   
+    }
+    .navlogo {
+        flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .navlinks {
+        justify-content: center;
+    }
+    .navlinks a {
+        margin: 0 10px;
+    }
+    .navlinks .btn {
+        background: transparent;
+        padding: 0;
+        color: white;
+    }
+    .content h1 {
+        font-size: 40px;
+    }
+    .content {
+        margin-top: 85px;
+    }
+    .searchbox {
+        padding: 13px 20px;
+    }
+    .searchbox button img {
+        width: 16px;
+    }
+}
